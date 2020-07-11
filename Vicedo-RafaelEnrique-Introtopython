@@ -1,0 +1,22 @@
+"""
+195227
+Vicedo
+Intro To Python Code
+"""
+while True: #start of loop
+    try:
+        num1=float(input("Please enter the 1st number:")) #collects 1st number
+        num2=float(input("Please enter the 2nd number")) #collects 2nd number
+        num3=float(input("Please enter the 3rd number")) #collects 3rd number
+    except ValueError:
+        print("Please enter a valid number!")
+        continue
+
+    def three_num_avg(num1, num2, num3): #defined function that calc. average of 3 numbers
+        "This function will take a sum of 3 numbers and give its average"
+        average=(num1+num2+num3)/3
+        print("Calculation Success! The average is",average)
+        return
+
+    three_num_avg(num1, num2, num3,) #prints defined function result
+    continue #endless loop
